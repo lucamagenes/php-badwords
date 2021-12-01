@@ -38,12 +38,14 @@ $censured_text = str_replace($_GET['word'], '***', $text);
 
 <h1>Parole da censurare</h1>
 
-<p>per censurare una parola dal testo qui sotto</p>
-<p>scrivi nella barra url: <br> ?word=(parola da censurare)</p>
+<p>Per censurare una parola dal testo qui sotto</p>
+<p>Scrivi nella barra url: <br> ?word=(parola da censurare)</p>
 
-<p> Testo: <br> <?php echo $text; var_dump(strlen($text)); ?> </p>
+<strong> Testo:</strong>
+<p> <?php echo $text; var_dump(strlen($text)); ?> </p>
 
-<p> Parola da censurare: <br> <?php echo $_GET['word']; ?> </p>
+<strong> Parola da censurare:</strong>
+<p> <?php echo $_GET['word']; ?> </p>
 
 <h2>Testo censurato</h2>
 
